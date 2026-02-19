@@ -35,3 +35,10 @@ def test_main_prints_version_with_v(capsys):
     captured = capsys.readouterr()
     assert code == 0
     assert captured.out.strip() == VERSION
+
+
+def test_main_prints_flags_with_h(capsys):
+    code = main(["--h"])
+    captured = capsys.readouterr()
+    assert code == 0
+    assert captured.out.strip() == "--name, --shout, --v, --h"

@@ -16,11 +16,20 @@ def parse_args(argv=None):
         action="store_true",
         help="Print script version and exit",
     )
+    parser.add_argument(
+        "--h",
+        action="store_true",
+        help="Print all available flags and exit",
+    )
     return parser.parse_args(argv)
 
 
 def main(argv=None):
     args = parse_args(argv)
+    if args.h:
+        print("--name, --shout, --v, --h")
+        return 0
+
     if args.v:
         print(VERSION)
         return 0

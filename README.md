@@ -21,6 +21,7 @@ Optional flag:
 
 - `--shout` prints the greeting in uppercase.
 - `--v` prints the script version number.
+- `--h` prints all available flags.
 
 Example:
 
@@ -32,8 +33,12 @@ python main.py --name "Ada" --shout
 python main.py --v
 ```
 
+```powershell
+python main.py --h
+```
+
 ## Test
 
 ```powershell
-python -m pytest
+py -m pytest -q
 ```
