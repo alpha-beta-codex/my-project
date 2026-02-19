@@ -17,6 +17,21 @@ python -m pip install -r requirements-dev.txt
 python main.py --name "Ada"
 ```
 
+Optional flag:
+
+- `--shout` prints the greeting in uppercase.
+- `--v` prints the script version number.
+
+Example:
+
+```powershell
+python main.py --name "Ada" --shout
+```
+
+```powershell
+python main.py --v
+```
+
 ## Test
 
 ```powershell
